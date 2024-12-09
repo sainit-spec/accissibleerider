@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Rider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Accessible Rider</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#book-ride">Book a Ride</a></li>
+                <li><a href="#accessibility-settings">Accessibility Settings</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section with Multi-color Theme -->
+        <section id="home" class="multi-colored-home">
+            <h2>About Us</h2>
+            <p>Accessible Rider empowers individuals with disabilities to book transportation services independently. We focus on accessibility, real-time assistance, and multi-modal interactions to make travel seamless.</p>
+            <div class="home-graphic">
+                <h3>Making Transportation Accessible for All</h3>
+                <p>We believe in equal access to public transport, ensuring every individual can book rides with ease and independence.</p>
+                <div class="cta-button">
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section with Interactive Styling -->
+        <section id="features" class="multi-colored-features">
+            <h2>Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>Voice Command Integration</h3>
+                    <p>For blind users to easily navigate and book rides.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Screen Reader Compatibility</h3>
+                    <p>Ensures that all content is accessible for users with visual impairments.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Visual Alerts</h3>
+                    <p>For deaf users to receive visual cues during the ride booking process.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Large Text Options</h3>
+                    <p>For elderly users who need larger, more readable text.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Real-time Ride Tracking</h3>
+                    <p>Track your ride in real-time for better management.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Accessibility Settings</h3>
+                    <p>Customize settings to your specific accessibility needs.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="signup-block">
+            <p>Don’t have an account? 
+                <a href="signup.html" class="signup-link">Sign Up</a>
+            </p>
+        </div>
+        
+        <style>
+            .signup-block {
+                background-color: #f7f7f7; /* Light background color */
+                border: 2px solid #4a90e2; /* Border color */
+                border-radius: 8px; /* Rounded corners */
+                padding: 20px; /* Padding around the content */
+                text-align: center; /* Center-align text */
+                margin-top: 20px; /* Space above the block */
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            }
+        
+            .signup-link {
+                color: #4a90e2; /* Link color */
+                text-decoration: none;
+                font-weight: bold; /* Bold text */
+                padding: 5px 10px;
+                border: 2px solid transparent; /* Border for the hover effect */
+                border-radius: 5px; /* Rounded corners for the link */
+                transition: all 0.3s ease; /* Smooth transition */
+            }
+        
+            .signup-link:hover {
+                color: #ffffff; /* Change text color on hover */
+                background-color: #4a90e2; /* Background color on hover */
+                border-color: #4a90e2; /* Border color on hover */
+            }
+        </style>
+        
+
+        
+
+
+
+        <!-- Book a Ride Section with Multi-modal Transport Options -->
+        <section id="book-ride" class="multi-colored-book-ride">
+            <h2>Book a Ride</h2>
+            <form id="ride-form">
+                <label for="pickup">Pickup Location:</label>
+                <input type="text" id="pickup" placeholder="Enter your pickup location" required>
+                
+                <label for="dropoff">Drop-off Location:</label>
+                <input type="text" id="dropoff" placeholder="Enter your drop-off location" required>
+
+                <label for="ride-type">Select Ride Type:</label>
+                <select id="ride-type">
+                    <option value="standard">Standard Ride</option>
+                    <option value="accessible">Accessible Ride</option>
+                </select>
+
+                <!-- New Transport Mode Option -->
+                <label for="transport-mode">Choose Transport Mode:</label>
+                <select id="transport-mode">
+                    <option value="bus">Bus</option>
+                    <option value="cab">Cab</option>
+                    <option value="metro">Metro</option>
+                </select>
+                
+                <button type="submit">Book Now</button>
+                <button id="start-voice-button" type="button">Use Voice Command</button>
+            </form>
+            <div id="confirmation"></div>
+        </section>
+
+        <!-- Accessibility Settings Section -->
+        <section id="accessibility-settings" class="multi-colored-accessibility">
+            <h2>Accessibility Settings</h2>
+            <form id="settings-form">
+                <label for="voice-command">
+                    <input type="checkbox" id="voice-command" checked> Enable Voice Commands
+                </label>
+                <label for="screen-reader-mode">
+                    <input type="checkbox" id="screen-reader-mode"> Enable Screen Reader Mode
+                </label>
+                <label for="large-text">
+                    <input type="checkbox" id="large-text"> Enable Large Text
+                </label>
+                <label for="voice-feedback">Voice Feedback:
+                    <select id="voice-feedback">
+                        <option value="default">Default Voice</option>
+                        <option value="robotic">Robotic Voice</option>
+                        <option value="natural">Natural Voice</option>
+                    </select>
+                </label>
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+        <section id="ai-interaction">
+            <h2>AI Interaction</h2>
+            <button id="start-interaction">Start Interaction</button>
+            <div id="question-container" style="display:none;">
+                <p id="question"></p>
+                <button id="record-response">Answer</button>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="multi-colored-contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please contact us at <a href="mailto:support@accessiblerider.com">support@accessiblerider.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Accessible Rider. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
+
+
+
+
+

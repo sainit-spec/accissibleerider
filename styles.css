@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #f7e1d7; /* Light Peach */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Multi-colored themes for sections */
+.multi-colored-home {
+    background: linear-gradient(135deg, #f6d7d7, #f9ece9); /* Light Peach to Light Beige */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.multi-colored-features {
+    background: linear-gradient(135deg, #d6e6f5, #d8f5e1); /* Powder Blue to Mint Green */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.multi-colored-book-ride {
+    background: linear-gradient(135deg, #f7e1d7, #d6e6f5); /* Light Peach to Powder Blue */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.multi-colored-accessibility {
+    background: linear-gradient(135deg, #d8f5e1, #f6d7d7); /* Mint Green to Soft Coral */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.multi-colored-contact {
+    background: linear-gradient(135deg, #f9ece9, #f6d7d7); /* Light Beige to Soft Coral */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #aec6cf; /* Powder Blue */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #87b9ca; /* Slightly darker Powder Blue */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f7e1d7; /* Light Peach */
+    border-top: 2px solid #f9ece9; /* Light Beige */
+    margin-top: 30px;
+}
+#ai-interaction {
+    background: linear-gradient(to right, lightblue, lightgreen);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#ai-interaction h2 {
+    text-align: center;
+}
+
+#start-interaction, #record-response {
+    background-color: softcoral; /* Change to your preferred color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-interaction:hover, #record-response:hover {
+    background-color: coral;
+}
+/* Sign-Up Form Section Styling */
+#signup-section {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#signup-section #signup-form h2 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+#signup-section form label {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+#signup-section form input, 
+#signup-section form select, 
+#signup-section form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+}
+
+#signup-section form input:focus, 
+#signup-section form select:focus, 
+#signup-section form textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* Button Styling for Sign-Up Form Only */
+#signup-section form button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#signup-section form button:hover {
+    background-color: #357abd;
+}
+
+#signup-section form textarea {
+    resize: vertical;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    #signup-section {
+        padding: 20px;
+    }
+
+    #signup-section form input, 
+    #signup-section form select, 
+    #signup-section form button {
+        font-size: 0.95em;
+    }
+
+    #signup-section form textarea {
+        font-size: 0.95em;
+    }
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Accessible Rider Account</h1>
+        <p>Empowering everyone to travel with ease and independence.</p>
+    </header>
+    <main>
+        <section id="signup-section">
+            <form id="signup-form">
+                <h2>Sign-Up Form</h2>
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+
+                <label for="disability">Do you have a specific disability?</label>
+                <select id="disability" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="none">None</option>
+                    <option value="blind">Blind or Low Vision</option>
+                    <option value="deaf">Deaf or Hard of Hearing</option>
+                    <option value="physical">Physical Disability</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="travel-preference">What type of transportation do you prefer?</label>
+                <select id="travel-preference">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="accessible-ride">Accessible Ride</option>
+                    <option value="standard-ride">Standard Ride</option>
+                    <option value="public-transport">Public Transport</option>
+                </select>
+
+                <label for="additional-notes">Additional Notes (Optional):</label>
+                <textarea id="additional-notes" rows="4" placeholder="Let us know any additional preferences or needs"></textarea>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Accessibility Settings -->
+        <section id="accessibility-settings">
+            <h2>Accessibility Settings</h2>
+            <label>
+                <input type="checkbox" id="enable-large-text"> Enable Large Text
+            </label>
+            <label>
+                <input type="checkbox" id="enable-screen-reader"> Enable Screen Reader
+            </label>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Rider. All rights reserved.</p>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+</html>
